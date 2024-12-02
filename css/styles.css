@@ -1,0 +1,39 @@
+html {
+    font-size: 1rem;
+}
+
+body {
+    max-width: 850px;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border-left: 2px solid #555;
+    border-right: 2px solid #555;
+    font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    font-size: 1.25rem;
+}
+
+th,
+td,
+caption {
+    border: 1px solid #555;
+    padding: 0.75rem;
+    font-family: 'Verdana', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    header,
+    main,
+    footer {
+        padding: 0.5rem;
+    }
+}
