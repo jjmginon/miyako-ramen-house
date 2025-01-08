@@ -3,123 +3,113 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="JJ Ginon">
     <meta name="description"
         content="Discover the authentic flavors of Japan at Miyako Ramen House. Enjoy our signature ramen bowls made with love and fresh ingredients. Visit us for a unique dining experience.">
     <title>Miyako Ramen House - Authentic Japanese Ramen</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Welcome to Miyako Ramen House</h1>
-        <nav>
-            <li>
-                <a href="#about">About <abbr title="Miyako Ramen House">MRH</abbr></a>
-            </li>
-            <li>
-                <a href="#menu">Our Menu</a>
-            </li>
-            <li>
-                <a href="hours.html">Store Hours</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact Us</a>
-            </li>
+    <header class="header">
+        <h1 class="header__h1">Miyako Ramen House</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
         </nav>
+    </header>
 
+    <section class="hero">
+        <h2 class="hero__h2">いらっしゃいませ!</h2>
         <figure>
-            <img src="img/ramen-400x267.png" alt="Bowl of Ramen" title="We love ramen!" width="400" height="267">
-            <figcaption>
+            <img src="img/ramen-1000x667.png" alt="Bowl of Ramen" title="We love ramen!" width="1000" height="667">
+            <figcaption class="offscreen">
                 Bowl of Ramen
             </figcaption>
         </figure>
-    </header>
-    <hr>
-    <main>
-        <article id="about">
-            <h2>About <abbr title="Miyako Ramen House">MRH</abbr></h2>
-            <p>
-                <abbr title="Miyako Ramen House">MRH</abbr> was founded in <time datetime="2024">2024</time>. Our shop
-                was built from a <strong>passion for authentic Japanese cuisine</strong>. We strive to bring the
-                flavors of traditional ramen to our community. 🍜🍜🍜
-            </p>
-            <aside>
-                <h3>Ramen Trivia</h3>
-                <details>
-                    <summary>What makes ramen so popular?</summary>
-                    <p>
-                        Ramen's popularity is due to its affordability, convenience, and rich flavor profile. It's a
-                        comfort food that's easy to prepare and customize, making it a favorite among people of all ages
-                        and backgrounds. (Source: <cite><a
-                                href="https://www.foodrinke.com/15-reasons-why-ramen-noodles-are-so-popular/"
-                                target="_blank">Foodrinke</a></cite>)
-                    </p>
-                </details>
-            </aside>
-        </article>
-        <hr>
-        <article id="menu">
-            <h2>Our Menu</h2>
-            <table>
-                <caption>Our Ramen Selection</caption>
+    </section>
+
+    <main class="main">
+        <article id="menu" class="main__article menu">
+            <h2 class="menu__h2">Our Menu</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Our Ramen Selection</caption>
                 <thead>
                     <tr>
-                        <th scope="col">Ramen</th>
-                        <th scope="col"><abbr title="Quantity">Qty</abbr></th>
-                        <th scope="col">Price</th>
+                        <th class="menu__header" scope="col">Ramen</th>
+                        <th class="menu__header" scope="col">Quantity</th>
+                        <th class="menu__header" scope="col">Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th scope="row" rowspan="3">
+                        <th class="menu__item menu__sr" scope="row" rowspan="3">
                             Shoyu Ramen
                         </th>
-                        <td>1</td>
-                        <td>$8.50</td>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$8.50</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>$16.00</td>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$16.00</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>$22.50</td>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$22.50</td>
                     </tr>
                     <tr>
-                        <th scope="row" rowspan="3">
+                        <th class="menu__item menu__mr" scope="row" rowspan="3">
                             Miso Ramen
                         </th>
-                        <td>1</td>
-                        <td>$9.00</td>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$9.00</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>$17.00</td>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$17.00</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>$24.00</td>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$24.00</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">
+                        <td class="menu__item menu__sd" colspan="3">
                             Side Dishes: Gyoza $5, Edamame $3
                         </td>
                     </tr>
                 </tfoot>
             </table>
-            <br>
-            <p>
+
+            <p class="center">
                 <a href="#">Back To Top</a>
             </p>
         </article>
     </main>
     <hr>
-    <footer>
-        <p>Copyright &copy; Miyako Ramen House</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">
+                Copyright &copy; <time datetime="2024">2024</time>
+            </span>
+            <span class="nowrap">Miyako Ramen House</span>
+        </p>
     </footer>
 </body>
 

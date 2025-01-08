@@ -3,61 +3,73 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="JJ Ginon">
     <meta name="description"
         content="Check the opening hours of Miyako Ramen House and visit us any day of the week. Enjoy our authentic Japanese ramen experience.">
     <title>Miyako Ramen House - Store Hours</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Miyako Ramen House - Store Hours</h1>
-        <nav>
-            <li>
-                <a href="/">Home</a>
-            </li>
-            <li>
-                <a href="/#about">About <abbr title="Miyako Ramen House">MRH</abbr></a>
-            </li>
-            <li>
-                <a href="/#menu">Our Menu</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact Us</a>
-            </li>
+    <header class="header">
+        <h1 class="header__h1">Miyako Ramen House</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/#menu">Menu</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
         </nav>
+    </header>
 
+    <section class="hero">
+        <h2 class="offscreen">The Store Hours Page Hero Section</h2>
         <figure>
-            <img src="img/mrh-400x267.png" alt="Miyako Ramen House" title="We love ramen!" width="400" height="267">
-            <figcaption>
+            <img src="img/mrh-1000x667.png" alt="Miyako Ramen House" title="We love ramen!" width="1000" height="667">
+            <figcaption class="offscreen">
                 Miyako Ramen House
             </figcaption>
         </figure>
-    </header>
-    <hr>
-    <main>
-        <p>
-            We are dedicated to serving you with the best ramen experience, seven days a week! Come visit us during our
-            optimal operating hours:
-        </p>
-        <dl>
-            <dt>Monday to Friday</dt>
-            <dd><time datetime="11:00">11 AM</time> - <time datetime="22:00">9 PM</time></dd>
-            <dt>Saturday and Sunday</dt>
-            <dd><time datetime="11:00">11 AM</time> - <time datetime="23:00">11 PM</time></dd>
-        </dl>
-        <p>
-            We look forward to welcoming you and serving you the finest ramen in town.
-        </p>
-        <p>
-            <a href="#">Back To Top</a>
-        </p>
+    </section>
+
+    <main class="main">
+        <article class="main__article">
+            <h2>Operating Hours</h2>
+            <p>We are dedicated to serving you with the best ramen experience, seven days a week! Come visit us during
+                our
+                optimal operating hours:</p>
+            <br>
+            <dl>
+                <dt>Sunday to Thursday</dt>
+                <dd><time datetime="11:00">11 AM</time> - <time datetime="22:00">10 PM</time></dd>
+                <dt>Friday and Saturday</dt>
+                <dd><time datetime="11:00">11 AM</time> - <time datetime="23:00">11 PM</time></dd>
+            </dl>
+            <br>
+            <p>
+                We look forward to welcoming you and serving you the finest ramen in town.
+            </p>
+        </article>
     </main>
-    <hr>
-    <footer>
-        <p>Copyright &copy; Miyako Ramen House</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">
+                Copyright &copy; <time datetime="2024">2024</time>
+            </span>
+            <span class="nowrap">Miyako Ramen House</span>
+        </p>
     </footer>
 </body>
 
