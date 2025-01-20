@@ -1,5 +1,7 @@
 # Miyako Ramen House
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/77bc0040-1272-44a9-8221-d72465c75559/deploy-status)](https://app.netlify.com/sites/miyako-ramen-house/deploys)
+
 Welcome to the Miyako Ramen House project repository! This project showcases the application of HTML, CSS, and JavaScript to create a delightful, responsive website for an authentic Japanese ramen experience.
 
 ## Table of Contents
